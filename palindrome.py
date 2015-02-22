@@ -7,7 +7,7 @@ def strip(str):
 def is_palindrome(str):
 
 	org = strip(str)
-	rev = strip(str[::-1])
+	rev = org[::-1]
 
 	if org.lower() == rev.lower():
 		print  '"%s" is a palindrome sentence' % str.replace('\n', '')
